@@ -1,0 +1,19 @@
+package sec01.exam01;
+
+public class For연습Exam {
+
+	public static void main(String[] args) {
+		
+		// 주어진 수가 양수(0포함), 음수 여부 출력
+		
+		int a = -3;
+		a++;
+		if(a % 2 == 0) {
+			System.out.println("짝수");
+		} else{
+			System.out.println("홀수");
+		}
+
+	}
+
+}

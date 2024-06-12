@@ -1,0 +1,66 @@
+package sec01.exam01;
+
+public class For구구단문제 {
+
+	public static void main(String[] args) {
+		
+		// 1단계 - 한 단을 옆으로 출력
+		
+		System.out.println("1단계");
+		
+		for(int dan = 2 ; dan <= 9 ; dan++) {
+			for(int k = 1 ; k <= 9 ; k++) {
+				System.out.print(dan + " * " + k + " = " + (dan*k));
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("--------------------------------------------------------");
+		
+		// 2단계 - 옆으로 3단씩 출력
+		
+		System.out.println("2단계");
+		
+		for(int dan = 2 ; dan <= 4 ; dan++) {
+			for(int k = 1 ; k <= 9 ; k++) {
+				System.out.println(dan + " * " + k + " = " + (dan*k));
+			}
+		}
+		
+		
+		System.out.println("--------------------------------------------------------");
+		
+		for(int dan = 2 ; dan <= 4 ; dan++) {
+			for(int k = 1 ; k <= 1 ; k++) {
+				System.out.print(dan + " * " + k + " = " + (dan*k));
+				System.out.print(" ");
+			}
+////			System.out.println();
+//			for(int k = 2 ; k <= 2 ; k++) {
+//				System.out.print(dan + " * " + k + " = " + (dan*k));
+//				System.out.print(" ");
+//			}
+		}
+		
+		System.out.println("--------------------------------------------------------");
+		System.out.println("--------------------------------------------------------");
+		
+		for(int dan = 2 ; dan <= 9 ; dan++) {
+			for(int k = 1 ; k <= 3 ; k++) {
+				System.out.println(dan + " * " + k + " = " + (dan*k));
+				}
+			System.out.println();
+			for(int k = 4 ; k <= 6 ; k++) {
+				System.out.println(dan + " * " + k + " = " + (dan*k));
+				}
+			System.out.println();
+			for(int k = 7 ; k <= 9 ; k++) {
+				System.out.println(dan + " * " + k + " = " + (dan*k));
+				}
+			System.out.print(" ");
+		}	
+	}
+
+}

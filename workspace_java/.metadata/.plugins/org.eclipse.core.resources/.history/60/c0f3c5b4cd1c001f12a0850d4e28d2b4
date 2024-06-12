@@ -1,0 +1,103 @@
+package sec01.exam01;
+
+public class For피라미드 {
+
+	public static void main(String[] args) {
+
+		// 0단계
+		System.out.println("0단계");
+		
+//		System.out.println("+");
+//		System.out.println("+");
+//		System.out.println("+");
+		
+		for(int i = 1 ; i <= 5 ; i++) {
+			System.out.println("+");
+		}
+		
+		// 1단계
+		System.out.println("1단계");
+		
+//		System.out.print("+");
+//		System.out.print("+");
+//		System.out.print("+");
+		
+		for(int i = 1 ; i <= 5 ; i++) {
+			System.out.print("+");
+		}
+		System.out.println();
+		
+		// 2단계
+		System.out.println("2단계");
+		
+//		j : 줄 - 그래서 범위가 3까지임
+		
+		for(int j = 1 ; j <=3 ; j++) {
+			for(int i = 1 ; i <= 5 ; i++) {
+				System.out.print("+");
+			}
+			System.out.println();
+		}
+		
+		// 2-1단계
+		System.out.println("2-1단계");
+		
+		for(int i = 1 ; i <= 5 ; i++) {
+			System.out.print("+");
+			System.out.print(" ");
+		}
+		System.out.println();
+		
+		// 3단계
+		System.out.println("3단계");
+		
+		for(int j = 1 ; j <= 5 ; j++) {
+			for(int i = 1 ; i <= j ; i++) {
+				System.out.print("+");
+			}
+			System.out.println();
+		}
+		
+		// 4단계
+		System.out.println("4단계");
+		
+		for(int j = 1 ; j <= 5 ; j++) {
+			for(int i = 1 ; i <= j ; i++) {
+				System.out.print("+");
+			}
+			for(int d = 4 ; d >= j ; d--) {
+				System.out.print(".");
+			}
+			System.out.println();
+		}
+		
+		// 5단계
+		System.out.println("5단계");
+		
+		for(int j = 1 ; j <= 5 ; j++) {
+			for(int d = 4 ; d >= j ; d--) {
+				System.out.print(".");
+			}
+			for(int i = 1 ; i <= j ; i++) {
+				System.out.print("+");
+			}
+			System.out.println();
+		}
+		
+		// 6단계
+		System.out.println("6단계");
+		
+		for(int j = 1 ; j <= 5 ; j++) {
+			for(int d = 4 ; d >= j ; d--) {
+				System.out.print(".");
+			}
+			for(int i = 1 ; i <= j ; i++) {
+				i = i + 2;
+				System.out.print("+");
+			}
+			System.out.println();
+		}
+		
+	}
+
+}

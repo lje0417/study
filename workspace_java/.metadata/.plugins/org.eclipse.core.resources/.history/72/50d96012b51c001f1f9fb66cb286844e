@@ -1,0 +1,45 @@
+package sec01.exam01;
+
+public class For구구단 {
+
+	public static void main(String[] args) {
+		
+		// 구구단
+		// 2단
+		System.out.println("2 * 1 = 2");
+		System.out.println("2 * 2 = 4");
+		System.out.println("2 * 3 = 6");
+		int cnt = 3;
+		cnt++;
+		System.out.println("2 * " + cnt + " = " + (2*cnt));
+		cnt++;
+		System.out.println("2 * " + cnt + " = " + (2*cnt));
+		
+		
+		System.out.println("-------------------------");
+		
+		for(int k = 1 ; k <= 9 ; k++) {
+			System.out.println("2 * " + k + " = " + (2*k));
+		}
+		for(int k = 1 ; k <= 9 ; k++) {
+			System.out.println("3 * " + k + " = " + (3*k));
+		}
+		
+		int dan = 3;
+		dan++;
+		for(int k = 1 ; k <= 9 ; k++) {
+			System.out.println(dan + " * " + k + " = " + (dan*k));
+		}
+		
+		System.out.println("-------------------------");
+		
+		for(int dan2 = 2 ; dan2 <= 9 ; dan2++) {
+			System.out.println("-----" + dan2 + "단-----");
+			for(int k = 1 ; k <= 9 ; k++) {
+				System.out.println(dan2 + " * " + k + " = " + (dan2*k));
+			}
+		}
+
+	}
+
+}

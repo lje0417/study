@@ -1,0 +1,60 @@
+package sec01.exam01;
+
+import java.util.Scanner;
+
+public class For연습Exam {
+
+	public static void main(String[] args) {
+		
+		// 주어진 수가 양수(0포함), 음수 여부 출력
+		
+		Scanner scan = new Scanner(System.in);
+//		int a = -3;
+//		System.out.println("숫자를 입력하세요");
+//		int a = scan.nextInt();
+//		if(a >= 0) {
+//			System.out.println("양수");
+//		} else{
+//			System.out.println("음수");
+//		}
+//		
+		
+		/*
+		// 입력 3회 반복
+		for(int i = 1 ; i <= 3 ; i++) {
+			System.out.println("숫자를 입력하세요");
+			int a = scan.nextInt();
+			if(a >= 0) {
+				System.out.println("양수");
+			} else{
+				System.out.println("음수");
+			}
+		}
+		*/
+		
+		// 입력받은 숫자가 0이 아니면 계속 반복
+		for(int a = 1 ; a != 0 ; ) {
+			System.out.println("숫자를 입력하세요(종료: 0)");
+			a = scan.nextInt();
+			if(a >= 0) {
+				System.out.println("양수");
+			} else{
+				System.out.println("음수");
+			}
+		}
+		System.out.println("종료되었습니다");
+		
+		System.out.println("---------------------------");
+		
+		// 피라미드 문제
+		
+		
+		System.out.println("+");
+		System.out.println("+");
+		System.out.println("+");
+		System.out.println("+");
+		System.out.println("+");
+		System.out.println("+");
+	}
+
+}

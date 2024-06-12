@@ -1,0 +1,24 @@
+package sec01.exam01;
+
+public class For구구단 {
+
+	public static void main(String[] args) {
+		
+		// 구구단
+		// 2단
+		System.out.println("2 * 1 = 2");
+		System.out.println("2 * 2 = 4");
+		System.out.println("2 * 3 = 6");
+		int cnt = 3;
+		cnt++;
+//		System.out.println(2 *  + cnt = 2*cnt);
+		cnt++;
+		System.out.println("2 * 3 = 6");
+		
+		for(int cnt1 = 1 ; cnt1 <= 9 ; cnt1 = 2 * cnt1) {
+			System.out.println(cnt1);
+		}
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package chap05;
+
+public class ReferenceExam {
+
+	public static void main(String[] args) {
+		
+		int a;
+//		System.out.println(a);
+//		int b = a;
+		
+		String c = "이정은";
+		// =을 기준으로 오른쪽 먼저 실행
+		// "이정은"이 heap 영역에 비어있는 번지에 들어간다
+		// stack 영역의 c에 그 번지가 기록된다
+		
+		System.out.println("c : " + c);
+		System.out.println("c == null : " + (c == null));
+		System.out.println("c != null : " + (c != null));
+		
+		c = null; // 주소값을 비워서 연결 끊기
+		System.out.println("c : " + c);
+		System.out.println("c == null : " + (c == null));
+		System.out.println("c != null : " + (c != null));
+		
+		String d;
+		// 기본타입과 마찬가지로
+		// 값을 할당하지 않으면 사용할 수 없다
+//		System.out.println(d);
+		d = "이정은";
+		
+		System.out.println(c == d);
+		
+	}
+
+}
