@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0522-1보충</title>
+    <style>
+        /* 
+           자식에게만 relative를 주게 되면
+           자식 하나가 변하면 다른 자식도 영향을 받는다
+           
+           부모에게 relative를 주고 자식에게 absolute를 주면
+           자식들이 서로에게 영향을 주지 않는다
+        */
+        .colorbox {
+            background-color: rgb(230, 197, 12);
+            width: 500px;
+            height: 600px;
+            margin: auto;
+            position: relative;
+            /* top: 500px; */
+            /* left: 500px; */
+        }
+        .menu {
+            border: 1px solid black;
+            background-color: white;
+            /* font-size: 18px; */
+            width: 300px;
+            padding: 3%;
+            position: relative;
+            bottom: 400px;
+            right: -100px;
+        }
+        .pie {
+            width: 411px;
+            height: 548px;
+            position: relative;
+            bottom: 840px;
+            right: -700px;
+        }
+</style>
+</head>
+<body>
+    <div class="second">
+        <div class="colorbox"></div>
+        <div class="menu"><h3>Cafe Food Menu</h3><br>All of our food is prepared by our team of trained kitchen staff from the sealed glass kitchen where you can see your food being made, without risk of little paws getting involved.</div>
+        <div>
+            <img class="pie" src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e07fd7349a87546e950fb324/photo1564305564045c62d40dd0123.jpg" alt="복숭아파이">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {margin: auto;}
+        .grey {color: grey;}
+        .thumb {width: 100px; border-radius: 10px; border: 1px groove grey;}
+        .thumb:hover {width: 110px;}
+        table {border-collapse: collapse}
+        td, table {border: 1px solid red;}
+        .up {margin: 0 5px; border: 1px solid red; padding: 0 5px; color: red;}
+        strong.up2::before {content: "UP"; margin: 0 5px; border: 1px solid red; padding: 0 5px; color: red;}
+        td.title {height: 20px;}
+        /* .name {height: 40px;} */
+        .blank {height: 20px;}
+        .right {
+            /* 
+                paddding은 -값 안 됨: border 밖으로 벗어날 수 없기 때문
+                padding-left: -500px;
+            */
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/10/09/370449/upload_7077467705797915957_202x164.jpeg" alt="미로에 빠진 사랑"></td>
+            <td><strong>미로에 빠진 사랑</strong><br>배결준<br>9.58 / 1.9만</td>
+            <td><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/06/04/230622/upload_3618133662164465766_202x164.jpeg" alt="로마의 법칙"></td>
+            <td><strong>로마의 법칙</strong><br>늘보<br>9.88 / 43만</td>
+        </tr>
+        <tr>
+            <td><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2024/05/13/141755/upload_7377796922527332657_202x164.jpeg" alt="야오네집"></td>
+            <td><strong>야오네집</strong><br>YAO<br>9.78 / 92만</td>
+            <td><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/03/12/324739/upload_4051322353419891513_202x164.jpeg" alt="158동 진상부부"></td>
+            <td><strong>158동 진상부부</strong><br>진상부부<br>9.54 / 379만</td>
+        </tr>    
+        <tr>   
+            <td><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2022/05/18/303129/thumbnail_202x164dfee8ef3_6719_4892_8662_07d1a02bedb6_00004208.JPEG" alt="단편집"></td>
+            <td><strong>단편집</strong><br>mrle<br>9.03 / 2만</td>
+            <td><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2021/05/16/233067/thumbnail_202x164d0bd834f_ab57_4772_8457_ccadc2b72505_00005203.JPEG" alt="상상동물"></td>
+            <td><strong>상상동물</strong><br>da2g<br>8.91 / 42만</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <table border="1">
+        <tr>
+            <td rowspan="3"><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/10/09/370449/upload_7077467705797915957_202x164.jpeg" alt="미로에 빠진 사랑"></td>
+            <td><strong>미로에 빠진 사랑</strong></td>
+            <td rowspan="3"><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/06/04/230622/upload_3618133662164465766_202x164.jpeg" alt="로마의 법칙"></td>
+            <td><strong>로마의 법칙</strong></td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>배결준</td>
+            <!-- <td>3</td> -->
+            <td>늘보</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>9.58 / 1.9만</td>
+            <!-- <td>3</td> -->
+            <td>9.88 / 43만</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2024/05/13/141755/upload_7377796922527332657_202x164.jpeg" alt="야오네집"></td>
+            <td><strong>야오네집</strong></td>
+            <td rowspan="3"><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/03/12/324739/upload_4051322353419891513_202x164.jpeg" alt="158동 진상부부"></td>
+            <td><strong>158동 진상부부</strong></td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>YAO</td>
+            <!-- <td>3</td> -->
+            <td>진상부부</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>9.78 / 92만</td>
+            <!-- <td>3</td> -->
+            <td>9.54 / 379만</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2022/05/18/303129/thumbnail_202x164dfee8ef3_6719_4892_8662_07d1a02bedb6_00004208.JPEG" alt="단편집"></td>
+            <td><strong>단편집</strong></td>
+            <td rowspan="3"><img src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2021/05/16/233067/thumbnail_202x164d0bd834f_ab57_4772_8457_ccadc2b72505_00005203.JPEG" alt="상상동물"></td>
+            <td><strong>상상동물</strong></td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>mrle</td>
+            <!-- <td>3</td> -->
+            <td>da2g</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>9.03 / 2만</td>
+            <!-- <td>3</td> -->
+            <td>8.91 / 42만</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    
+    <!-- 선생님 풀이 -->
+    <!-- 방법 1: table, 세 줄에 두 칸, 왼쪽 칸 병합 -->
+    <table>
+        <tr>
+            <td rowspan="4">
+                <img class="thumb" src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/06/27/332092/upload_7090134976656716596_202x164.jpeg" alt="육아의 계절">
+            </td>
+            <td class="title"><span class="up">UP</span><strong>육아의 계절</strong></td>
+            <td rowspan="4">
+                <img class="thumb" src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2020/02/03/312881/thumbnail_202x1644a1ff785_5bae_4dfe_a1ae_53e3528d0836_00003656.JPEG" alt="아빠는 N살">
+            </td>
+            <td class="title"><strong>아빠는 N살</strong></td>
+        </tr>
+        <tr>
+            <!-- <td>21</td> -->
+            <td class="name">십짱생</td>
+            <!-- <td>23</td> -->
+            <td class="name">유영근</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td class="blank"></td>
+            <!-- <td></td> -->
+            <td class="blank"></td>
+        </tr>
+        <tr>
+            <!-- <td>31</td> -->
+            <td class="grey">9.68 / 82만</td>
+            <!-- <td>33</td> -->
+            <td class="grey">9.90 / 5231만</td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img class="thumb" src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2023/06/27/332092/upload_7090134976656716596_202x164.jpeg" alt="육아의 계절">
+            </td>
+            <td class="title"><strong class="up2"></strong><strong>육아의 계절</strong></td>
+            <td rowspan="3">
+                <img class="thumb" src="https://image-comic.pstatic.net/user_contents_data/challenge_comic/2020/02/03/312881/thumbnail_202x1644a1ff785_5bae_4dfe_a1ae_53e3528d0836_00003656.JPEG" alt="아빠는 N살">
+            </td>
+            <td class="title"><strong>아빠는 N살</strong></td>
+        </tr>
+        <tr>
+            <!-- <td>21</td> -->
+            <td>십짱생</td>
+            <!-- <td>23</td> -->
+            <td>유영근</td>
+        </tr>
+        <tr>
+            <!-- <td>31</td> -->
+            <td class="grey">9.68 / 82만</td>
+            <!-- <td>33</td> -->
+            <td class="grey">9.90 / 5231만</td>
+        </tr>
+    </table>
+    <!-- 방법 2: table, 한 줄에 두 칸, 오른쪽 칸에 table(세 줄에 한 칸) -->
+    <table border="1">
+        <tr>
+            <td>11</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>2-1</td>
+                    </tr>
+                    <tr>
+                        <td>2-2</td>
+                    </tr>
+                    <tr>
+                        <td>2-3</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ansolute로 하는 것이 더 좋아보임 relative로 해도 상관은 없음 둘 다 연습해보기 */
+        div {border: 1px solid black;}
+        .parent {
+            /* border: 1px solid black; */
+            /* position: relative; */
+            width: 500px;
+            margin: 50px;
+        }
+        .z1 {
+            background-color: blueviolet;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 500px;
+        }
+        .z2 {
+            position: relative;
+            top: 15px;
+            left: -5px;
+            z-index: 2;
+        }
+        img {width: 500px;}
+        .z3 {
+            background-color: white;
+            color: rgb(212, 157, 212);
+            position: relative;
+            top: -150px;
+            left: 450px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="relative z1"></div>
+        <div class="relative z2">
+            <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e1900cdaa5c15cecae8746b6/rtyy-min.jpg" alt="여자">
+        </div>
+        <div class="relative z3">
+            ABOUT US<br>Fashion<br>Trends<br>2021<br>Images from Freepic
+        </div>
+    </div>
+</body>
+</html>
